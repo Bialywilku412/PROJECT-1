@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="/scripts.js"></script>
+</head>
+<body>
+    <!-- navigatie -->
+    <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ervaring.html">Ervaring</a></li>
+            <li><a href="motivatie.html">Programming</a></li>
+            <li><a href="educatie.html">Educatie</a></li>
+            <li><a href="school.html">School</a></li>
+            <li>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="drop-button">Over mij</button>
+                    <div id="dropdown" class="dropdown-content">
+                        <a href="/informatie.html">Informatie</a>
+                        <a href="/werk.html">Werk</a>
+                        <a href="/hobby.html">Hobby</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="current active" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- formulier -->
+    <div class="form-container">
+        <form action="/sent.html">
+            
+            <label for="name">Voornaam</label>
+            <input type="text" id="name" name="name" placeholder="Uw Voornaam.." required>
+
+            <label for="lastname">Achternaam</label>
+            <input type="text" id="lastname" name="lastname" placeholder="Uw Achternaam.." required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Uw E-mail.." required>
+
+            <label for="number">Nummer</label>
+            <input type="tel" id="number" name="number" placeholder="Uw Nummer.." required>
+
+            <label for="message">Bericht</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Uw Bericht.."></textarea>
+
+            <input type="submit" value="Verzend">
+            
+        </form>
+    </div>
+</body>
+</html>

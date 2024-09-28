@@ -1,0 +1,433 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: gray;
+  background-image: url(/images/images.jpg);
+}
+
+/*nav contaier*/
+ul {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.904);
+  margin-top: 0;
+  margin-bottom: 0;
+  height: 100px;
+  align-items: center;
+  list-style: none;
+  justify-content: space-evenly;
+  font-size: 2em;
+  gap: 2em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/*nav contaier*/
+
+/*nav links*/
+li {
+  flex: 1;
+}
+
+nav::after {
+  background-color: orange;
+  width: 100%;
+  content: "";
+  display: block;
+  height: 0.5em;
+  box-shadow: orange 0 0 5px;
+}
+
+.current {
+  font-weight: bolder;
+}
+
+a:link,
+a:visited {
+  color: grey;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.5s;
+  border-bottom: 3px solid orange;
+}
+
+.active {
+  border-bottom: 3px solid orange;
+}
+
+/*dropdown*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  width: 110%;
+}
+
+.dropdown-content a {
+  display: block;
+  padding-top: 20px;
+}
+
+.show {
+  display: block;
+}
+
+.drop-button {
+  background-color: transparent;
+  border: none;
+  color: gray;
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.drop-button:hover {
+  color: orange;
+  background-color: transparent;
+  text-decoration: none;
+  opacity: 0.9;
+  transition: 0.5s;
+  border-bottom: 3px solid orange;
+}
+/*dropdown*/
+/*nav links*/
+
+/*header*/
+.home-header {
+  text-align: center;
+  padding: 100px;
+}
+
+.home-header h1 {
+  font-size: 2em;
+  color: orange;
+}
+
+.home-header p {
+  color: orange;
+  font-size: 1.5em;
+}
+
+.header-image {
+  border-radius: 50%;
+  width: 12.5em;
+  height: 12.5em;
+  border: solid orange 4px;
+  box-shadow: rgb(238, 210, 49) 0 0 1.5em;
+}
+/*header*/
+
+/*footer*/
+footer {
+  background-color: rgb(34, 33, 34);
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  border-top: black solid 2px;
+}
+
+.footer-paragraph {
+  text-align: center;
+}
+
+footer a {
+  text-align: center;
+  align-items: center;
+  display: block;
+}
+
+footer a:hover {
+  border: none;
+}
+/*footer*/
+
+/*educatie en hobby*/
+.container-educatie-left,
+.container-hobby-left {
+  display: flex;
+  padding: 25px;
+}
+
+.container-educatie-right,
+.container-hobby-right {
+  display: flex;
+  padding: 25px;
+  justify-content: flex-end;
+}
+
+.image-school {
+  width: 30%;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.image-hobby {
+  width: 20%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.paragraph-educatie-color,
+.paragraph-hobby-color {
+  color: rgb(7, 7, 7);
+  padding: 2px;
+  font-size: 1.6em;
+  font-family: "Monaco", "Lucida Console", monospace;
+}
+
+.paragraph-box {
+  background-color: rgb(126, 123, 118);
+  width: 50%;
+  box-shadow: rgb(155, 146, 146) 5px 5px 8px;
+}
+/*educatie en hobby*/
+
+/*school*/
+
+/*school*/
+
+/*ervaring*/
+.logo {
+  width: 200px;
+  height: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.container-logo {
+  width: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  gap: 10em;
+}
+
+.container-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+}
+
+.box-text {
+  font-family: "Monaco", "Lucida Console", monospace;
+  width: 100%;
+  background-color: rgb(126, 123, 118);
+  box-shadow: rgb(155, 146, 146) 5px 5px 8px;
+}
+
+.box-text p {
+  width: 100%;
+  padding: 10px;
+}
+/*table*/
+th {
+  color: white;
+}
+
+td {
+  background-color: orange;
+}
+.table-container {
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+table {
+  font-size: 2em;
+  border-spacing: 1em;
+}
+
+/*table*/
+/*ervaring*/
+
+/*contact*/
+.form-container {
+  background-color: grey;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8%;
+  font-size: 2.5em;
+  padding: 20px;
+  border: rgb(70, 66, 66) solid 3px;
+  margin-bottom: 40px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: solid black 3px;
+}
+
+input[type="submit"] {
+  padding: 25px;
+  border-radius: 5px;
+  background-color: rgb(255, 165, 0);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: chocolate;
+  transition: 0.5s;
+}
+/*contact*/
+
+/*sent*/
+.sent-container p {
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.sent-container {
+  margin-top: 15%;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1em;
+  width: 8em;
+  font-size: 1.3em;
+  font-family: fantasy;
+  background-color: rgba(0, 0, 0, 0.904);
+  border: solid orange 2px;
+  color: orange;
+  cursor: pointer;
+  box-shadow: orange 0 0 2em;
+}
+
+.home-button:hover {
+  background-color: orange;
+  color: black;
+  box-shadow: orange 0 0 5em;
+}
+/*sent*/
+
+/*Programming*/
+.certificate-image img,
+.website-link img,
+.video-container iframe {
+  width: 100%;
+}
+
+.website-link img {
+  height: 250px;
+}
+
+.image {
+  flex: 1;
+}
+
+.certificate-image,
+.video-container,
+.website-link {
+  display: flex;
+  max-width: 100%;
+  gap: 3em;
+}
+
+.motivatie-text {
+  color: orange;
+  text-align: center;
+  padding: 8px;
+}
+/*Programming*/
+
+/*school*/
+.school-text {
+  color: orange;
+  text-align: center;
+}
+
+.school-text h2 {
+  font-size: 4em;
+}
+
+.school-text p {
+  font-size: 2em;
+}
+
+.school-text img {
+  height: 700px;
+  width: 1200px;
+}
+/*school*/
+
+/*Informatie*/
+.informatie-box {
+  background-color: black;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: orange 2px solid;
+}
+
+.informatie-box p {
+  color: orange;
+  padding: 20px;
+  font-size: 2em;
+}
+
+.countdown {
+  color: hotpink;
+  text-align: center;
+  font-size: 3em;
+}
+/*Informatie*/
+
+.werk-container p {
+  color: grey;
+  font-size: 2em;
+  text-align: center;
+}
+
+.werk-container h2 {
+  color: orange;
+  font-size: 4em;
+  text-align: center;
+}
+
+.werk-container {
+  margin-top: 5%;
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: black;
+  border: solid orange;
+  margin-bottom: 40px;
+}
